@@ -22,7 +22,6 @@ app.use(todoRoutes);
 async function start(): Promise<void> {
     try {
         await mongoose.connect(''); 
-
         app.listen(PORT, () => {
             console.log(`Starting on PORT: ${PORT}`);
         });
